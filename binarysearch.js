@@ -53,7 +53,7 @@ function binarySearchWrote2(nums, target) {
     let mid = left + Math.floor((right - left) / 2);
 
     if (nums[mid] === target) {
-      console.log(mid);
+      return(mid);
     } else if (nums[mid] < target) {
       left = mid + 1;
     } else if (nums[mid > target]) {
@@ -72,7 +72,7 @@ function binarySearchWrote3(nums, target) {
     let mid = left + Math.floor((right - left) / 2);
 
     if (nums[mid] === target) {
-      console.log(mid);
+      return(mid);
     } else if (nums[mid] < target) {
       left = mid + 1;
     } else if (nums[mid] > target) {
@@ -91,7 +91,7 @@ function binarySearchWrote4(nums, target) {
     let mid = left - Math.floor((right + left) / 2);
 
     if (nums[mid] === target) {
-      console.log(mid);
+      return(mid);
     } else if (nums[mid] < target) {
       left = mid + 1;
     } else if (nums[mid] > target) {
@@ -101,3 +101,4 @@ function binarySearchWrote4(nums, target) {
 
   return -1;
 }
+
