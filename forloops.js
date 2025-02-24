@@ -35,9 +35,44 @@ function oddsEvens(oddsOrEvens, numberMax) {
       }
     } else {
       console.log("Sorry, input not recognized");
-      return 0;
+     return 0;
     }
   }
 }
 
-oddsEvens(oddsOrEvens, numberMax);
+// oddsEvens(oddsOrEvens, numberMax);
+
+function isEven(numberMax) {
+  for (let i = 0; i <= numberMax; i++) {
+    if (i % 2 === 0) {
+      console.log(i);
+    }
+  }
+}
+
+function isOdd(numberMax) {
+  for (let i = 1; i <= numberMax; i++) {
+    if (i % 2 === 1) {
+      console.log(i);
+    }
+  }
+}
+
+function betterOddsEvens(oddsOrEvens, numberMax) {
+  if (
+    oddsOrEvens.toLowerCase() === "odds" ||
+    oddsOrEvens.toLowerCase() === "odd"
+  ) {
+    isOdd(numberMax);
+  } else if (
+    oddsOrEvens.toLowerCase() === "evens" ||
+    oddsOrEvens.toLowerCase() === "even"
+  ) {
+    isEven(numberMax);
+  } else {
+    console.log("Sorry, input not recognized");
+    return 0;
+  }
+}
+
+betterOddsEvens(oddsOrEvens, numberMax);
