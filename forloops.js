@@ -35,7 +35,7 @@ function oddsEvens(oddsOrEvens, numberMax) {
       }
     } else {
       console.log("Sorry, input not recognized");
-     return 0;
+      return 0;
     }
   }
 }
@@ -59,15 +59,10 @@ function isOdd(numberMax) {
 }
 
 function betterOddsEvens(oddsOrEvens, numberMax) {
-  if (
-    oddsOrEvens.toLowerCase() === "odds" ||
-    oddsOrEvens.toLowerCase() === "odd"
-  ) {
+  const userChoice = oddsOrEvens.toLowerCase();
+  if (userChoice === "odds" || userChoice === "odd") {
     isOdd(numberMax);
-  } else if (
-    oddsOrEvens.toLowerCase() === "evens" ||
-    oddsOrEvens.toLowerCase() === "even"
-  ) {
+  } else if (userChoice === "evens" || userChoice === "even") {
     isEven(numberMax);
   } else {
     console.log("Sorry, input not recognized");
