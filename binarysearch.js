@@ -120,3 +120,5 @@ function binarySearchWrote5(nums, target) {
 
   return -1;
 }
+
+
